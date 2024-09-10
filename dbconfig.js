@@ -2,7 +2,7 @@ const { MongoClient } = require('mongodb');
 const uri = 'mongodb://localhost:27017/crud';
 
 let client;
-
+ 
 async function connectToDatabase() {
   if (!client) {
     client = new MongoClient(uri);

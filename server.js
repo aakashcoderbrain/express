@@ -44,7 +44,7 @@ app.post('/updateUser', async (req, res) => {
             res.send({
                 message: "User updated successfully",
                 status: 200
-            });
+            }); 
         } else {
             await usersCollection.insertOne(req.body);
             res.send({
